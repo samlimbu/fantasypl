@@ -8,7 +8,7 @@ The app displays fantasy premier league stats in a line chart and compare total 
 https://samfantasypremiereleague.firebaseapp.com/
 
 # Facilities
-> The app allows registration and users with registration can save their favorite players and will be loaded automatically as they enter website.
+<br> The app allows registration and users with registration can save their favorite players and will be loaded automatically as they enter website.
 > The profile page will only be available to registered users.
 
 # Important notes and Features
