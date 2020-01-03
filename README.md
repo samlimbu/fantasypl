@@ -2,6 +2,35 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
+The app displays fantasy premier league stats in a line chart and compare total points accumalted by different players.
+
+# Live Demo Server
+https://samfantasypremiereleague.firebaseapp.com/
+
+# Facilities
+> The app allows registration and users with registration can save their favorite players and will be loaded automatically as they enter website.
+> The profile page will only be available to registered users.
+
+# Important notes and Features
+> API data is received from fantasy PL servers. Eg: https://fantasy.premierleague.com/api/bootstrap-static/ 
+> Node js server is hosted on heroku.com as a proxy to bypass CORS and to streamline data from fantasyPL server as the data format is not suitable for this demo purpose. Eg: https://fantasy.premierleague.com/api/entry/1594471/history/
+> Website might be slow as all services are of free option
+> Jwt authentication - http interceptor intercepts request to /profile backend and adds jwt token in header before sending request as it is unauthorized resource for request with no credentials
+> Lazy Loading of various pages
+> all subscription of Observables are unsubscribed through use of a common function - takeUntil-function.ts > componentDestroyed
+> External app-config.json file is provided in assets to change parameters from outside as required.
+> Dependencies are in package.json file
+
+
+
+
+
+
+# Known Bugs
+Duplicate display of data in some instances
+y axis of chart doesn't display properly if player has 0 score in first game.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
