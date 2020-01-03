@@ -11,7 +11,7 @@ export class GlobalErrorHandler implements ErrorHandler {
     console.log('Req url: ${router.url}');
     console.log('rtouer', router);
  
-     //router.navigate(['/dashboard/error']);
+     //router.navigate(['/home/error']);
      throw error;
   }
   

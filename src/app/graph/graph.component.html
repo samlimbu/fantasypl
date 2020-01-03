@@ -1,7 +1,7 @@
-<div style="background-color: #37003c;">
+<div style="background-color: darkgray;">
     
 
   <line-chart [elementId]="'line-chart-1'" [TEMPDATA]="DATA" [width]="800" [height]="800" [columnLabels]="columnLabels" [columnLabelsColorLIST]="columnLabelsColorLIST"></line-chart>
   </div>
   
-  <button *ngIf="DATA!=undefined" (click)="getDataAPIMethods()">test</button>
+  <button (click)="onButton()">test</button>

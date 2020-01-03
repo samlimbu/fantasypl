@@ -1,0 +1,11 @@
+<div ngbDropdown class="d-inline-block">
+  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Players</button>
+  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+    <button *ngFor="let item of PLAYERSLIST" ngbDropdownItem (click)="onPlayerSelect(item)">{{item.first_name}}
+      {{item.second_name}}</button>
+  </div>
+</div>
+<app-drop-downlist [LIST]="PLAYERSLIST" [KEYS]="['first_name','second_name']" (eventClick)="onSelect($event)"></app-drop-downlist>
+<div style="height: 900px; width: 900px">
+  <app-graph></app-graph>
+</div>

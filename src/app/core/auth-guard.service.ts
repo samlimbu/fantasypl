@@ -9,7 +9,7 @@ export class AuthGuardService {
     private router:Router) { }
 
     canActivate(){
-        if(this.authService.loggedIn()){
+        if(this.authService.isTokenExpired()){
             return true;
         }
         else{

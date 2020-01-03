@@ -1,5 +1,5 @@
 import { OnDestroy } from '@angular/core';
-import { ReplaySubject } from 'rxjs/ReplaySubject';
+import { ReplaySubject } from 'rxjs';
 
 export function componentDestroyed(component: OnDestroy) {
   const oldNgOnDestroy = component.ngOnDestroy;

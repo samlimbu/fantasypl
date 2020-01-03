@@ -59,7 +59,7 @@ export class HeaderInterceptor implements HttpInterceptor {
                 isSendToken = true;
             }
         }
-        if (this.authService.loggedIn() && isSendToken) {
+        if (this.authService.isTokenExpired() && isSendToken) {
 
             // Clone the request to add the new header
             clonedRequest = req.clone({
@@ -69,15 +69,16 @@ export class HeaderInterceptor implements HttpInterceptor {
                     Authorization: this.authService.getToken()
                 }
             });
-        } else {
-            clonedRequest = req.clone({
-                setHeaders: {
-                    Accept: `application/json`,
-                    'Content-Type': `application/json`,
-                    'Access-Control-Allow-Origin':'*'
-                }
-            });
-        }
+        } 
+        // else {
+        //     clonedRequest = req.clone({
+        //         setHeaders: {
+        //             Accept: `application/json`,
+        //             'Content-Type': `application/json`,
+        //             'Access-Control-Allow-Origin':'*'
+        //         }
+        //     });
+        // }
         console.log(clonedRequest);
         // Pass the cloned request instead of the original request to the next handle                     
         return next.handle(clonedRequest);

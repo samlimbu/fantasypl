@@ -127,10 +127,10 @@ export class LineChartService extends ChartBaseService {
                     xAxes: [{
                         ticks: {
                             autoSkip: true,
-                            maxTicksLimit: 4,
+                            maxTicksLimit: 5,
                             fontColor: 'white',
-                            maxRotation: 0,
-                            minRotation: 0
+                            maxRotation: 2,
+                            minRotation: 1
                         },
                         gridLines: {
                             drawOnChartArea: false,
@@ -164,7 +164,7 @@ export class LineChartService extends ChartBaseService {
                             }
                         },
                         gridLines: {
-                            drawOnChartArea: false,
+                            drawOnChartArea: true,
                             color: "#ffffff"
                         },
 
