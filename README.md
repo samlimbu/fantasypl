@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 # Description
-The app displays fantasy premier league stats in a line chart and compare total points accumalted by different players.
+The app displays fantasy premier league stats in a line chart and compare total points accumulated by different players in one match across various fixtures.
 
 # Live Demo Server
 https://samfantasypremiereleague.firebaseapp.com/
