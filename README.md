@@ -13,7 +13,7 @@ https://samfantasypremiereleague.firebaseapp.com/
 
 # Important notes and Features
 <br>  API data is received from fantasy PL servers. Eg: https://fantasy.premierleague.com/api/bootstrap-static/ 
-<br> <br> Node js server is hosted on heroku.com as a proxy to bypass CORS and to streamline data from fantasyPL server as the data format is not suitable for this demo purpose. Eg: https://fantasy.premierleague.com/api/entry/1594471/history/
+<br> <br> Node js server is hosted on heroku.com as a proxy to bypass CORS and to streamline data from fantasyPL server as the data format is in dump and is not suitable for this demo purpose. Eg: https://authnode1.herokuapp.com/fpl/element/1/history
 <br><br> Website might be slow as all services are of free option
 <br> <br> Jwt authentication - http interceptor intercepts request to /profile backend and adds jwt token in header before sending request as it is unauthorized resource for request with no credentials
 <br> <br>Lazy Loading of various pages
