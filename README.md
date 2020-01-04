@@ -6,6 +6,8 @@ The app displays fantasy premier league stats in a line chart and compare total 
 
 # Live Demo Server
 https://samfantasypremiereleague.firebaseapp.com/
+username: admin
+password: admin
 <br>
 Backend source: https://github.com/samlimbu/authnode
 
