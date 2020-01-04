@@ -6,6 +6,8 @@ The app displays fantasy premier league stats in a line chart and compare total 
 
 # Live Demo Server
 https://samfantasypremiereleague.firebaseapp.com/
+<br>
+Backend source: https://github.com/samlimbu/authnode
 
 # Facilities
 <br> The app allows registration and users with registration can save their favorite players and will be loaded automatically as they enter website.
@@ -24,13 +26,11 @@ https://samfantasypremiereleague.firebaseapp.com/
 
 
 
-
-
 # Known Bugs
 <br> Duplicate display of data in some instances
 <br> y axis of chart doesn't display properly if player has 0 score in first game.
 
-<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+<br> <br> <br> <br> <br> <br> <br> <br> <br> 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
